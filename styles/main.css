@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Open Sans";
+  src: local("/assets/fonts/open-sans/OpenSans-Regular.ttf");
+}
+
+:root {
+  --font-main: "Open Sans", sans-serif;
+  --font-size: 16px;
+  --container-width: 1200px;
+  --radius: 10px;
+  --background: rgba(202, 2, 241, 0.58);
+  --primary: #02020225;
+  --text-color-regular: rgb(32, 32, 32);
+}
+
+html {
+  font-family: var(--font-main);
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+/*  */
+/* ----- BODY -----*/
+body {
+  background-color: var(--background);
+  color: var(--text-color-regular);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background-color 0.25s ease;
+}
+
+.container {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#btn-cambiar {
+  width: 250px;
+  height: 60px;
+  background-color: var(--primary);
+  border-radius: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* ANIMATIONS */
