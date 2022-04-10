@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "Open Sans";
-  src: local("/assets/fonts/open-sans/OpenSans-Regular.ttf");
+  font-family: 'Open Sans';
+  src: local('/assets/fonts/open-sans/OpenSans-Regular.ttf');
 }
 
 :root {
-  --font-main: "Open Sans", sans-serif;
+  --font-main: 'Open Sans', sans-serif;
   --font-size: 16px;
   --container-width: 1200px;
   --radius: 10px;
@@ -14,17 +14,17 @@
 }
 
 html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
   font-family: var(--font-main);
   font-size: var(--font-size);
-  scroll-behavior: smooth;
 }
 
 *,
 *:after,
 *:before {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
-/*  */
 /* ----- BODY -----*/
 body {
   background-color: var(--background);
@@ -33,6 +33,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  font-weight: bold;
   transition: background-color 0.25s ease;
 }
 
@@ -45,12 +46,12 @@ body {
   align-items: center;
 
   background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
   border-radius: 10px;
+  backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-#btn-cambiar {
+.btn__cambiar {
   width: 250px;
   height: 60px;
   background-color: var(--primary);
@@ -60,4 +61,3 @@ body {
   cursor: pointer;
 }
 
-/* ANIMATIONS */
